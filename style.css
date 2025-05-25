@@ -70,13 +70,14 @@ button:hover{
     padding-top: 100px; 
     transition: 0.5s ease-in-out;
 	z-index: 1000;
+}
 
-    .nav-list{
+.nav-list{
 	flex-grow: 1;
 	display: flex;
     flex-direction: column;
 	justify-content: center;
-    }
+}
 
 .nav-link {
 	color: white;
@@ -99,7 +100,6 @@ button:hover{
 	margin-bottom: 20px;
 	background-color: var(--vt);
 }
-}
 
 .menu-icon{
 	display: flex;
@@ -116,9 +116,9 @@ button:hover{
 }
 
 .menu-icon #close-menu-btn{
-		position:absolute;
-		top: 30px;
-		color: white;
+	position:absolute;
+	top: 30px;
+	color: white;
 }
 
 body.show-mobile-menu .menu-icon .nav-menu{
@@ -158,33 +158,33 @@ body.show-menu .left-side{
 }
 
 body.show-menu main::before{
-		content: "";
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		backdrop-filter: blur(5px);
-		background: rgba(0, 0, 0, 0.2);							
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(5px);
+	background: rgba(0, 0, 0, 0.2);							
 }
 
 #open-btn, .user-info #close-btn{
-		position: absolute;
-		display: block;
-		font-size: 1.7rem;
-	}
+	position: absolute;
+	display: block;
+	font-size: 1.7rem;
+}
 	
-	.user-info #close-btn{
-		right: 5px;
-		top: 15px;
-		color: var(--ivory-white);
-	}
+.user-info #close-btn{
+	right: 5px;
+	top: 15px;
+	color: var(--ivory-white);
+}
 	
-	#open-btn{
-		color: var(--deep-plum);
-		top: 10px;
-		left: 10px;
-	}
+#open-btn{
+	color: var(--deep-plum);
+	top: 10px;
+	left: 10px;
+}
 
 #side-details{
 	position: relative;
@@ -230,20 +230,20 @@ body.show-menu main::before{
 .skills{
 		flex-grow: 1; 
     	overflow-y: auto;
+}
 
-	ul{
+.skills ul{
 		padding: 55px 20px 0;
-	}
+}
 
-	li{
-		margin-bottom: 10px;
-	}
+.skills li{
+	margin-bottom: 10px;
+}
 
-	p{
-		font-weight: bold!important;
-		font-size: 14px;
-		line-height: 2;
-	}
+.skills p{
+	font-weight: bold!important;
+	font-size: 14px;
+	line-height: 2;
 }
 
 /*Progress Bar*/
@@ -253,14 +253,14 @@ body.show-menu main::before{
 	background-color: var(--vtw);
 	border-radius: 50px;
 	z-index: 0;
+}
 
-	span{
+.progress-bar span{
 	height: 5px;
 	float: left;
 	display: block;
 	background-color: white;
 	border-radius: 50px;
-}
 }
 
 /*Progress Bar Animation*/
@@ -427,57 +427,58 @@ input:checked + .slider:before{
 	background-color: var(--vt);
 	padding: 15px 0;
 	text-align: center;
-
-	li a{
-		color: white;
-	}
-
-	li a:hover{
-		color: var(--cool-mint);
-		transform: translateY(-3px);
-	}
-
-	.social-list{
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		padding: 0;
 }
+
+.social-icons ul li a{
+	color: white;
+}
+
+.social-icons ul li a:hover{
+	color: var(--cool-mint);
+	transform: translateY(-3px);
+}
+
+.social-list{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0;
 }
 
 /* Middle Section */
 .middle-section{
-	padding: 0 20px;
+	padding: 0 10px;
+}
 
-	section{
-		padding: 70px 0;
-	}
+.middle-section section{
+	padding: 70px 0;
 }
 
 .section2-image{
-		display: none;
-		
-	img{
-		display: none;
-	}
+	display: none;
+}
+
+.section2-image img{
+	display: none;
 }
 
 .second-section{
 	overflow: hidden;
 	background-color: var(--medium-plum);
-	width: 800px;
 	box-shadow:  0 1rem 3rem rgba(0, 0, 0, 0.175);
-	width: 23rem;
+	width: 22.5rem;
 	padding: 20px 10px;
 	color: var(--ivory-white);
+	box-sizing: border-box;
 }
 
 .description-info{
 	text-align: center;
-	h1{
-		color: var(--ivory-white)
-	}
 }
+.description-info h1{
+	color: var(--ivory-white)
+}
+
 
 .heading-1-section2{
 	text-transform: uppercase;
@@ -498,11 +499,9 @@ input:checked + .slider:before{
 	padding: 10px 0;
 }
 
-#home{
-	button{
-		font-size: 12px;
-		padding: 10px 13px;
-	}
+#home button{
+	font-size: 12px;
+	padding: 10px 13px;
 }
 
 /* Homepage Buttons */
@@ -510,20 +509,20 @@ input:checked + .slider:before{
 	display: flex;
 	padding-top: 10px;
 	justify-content: space-evenly;
+}
 
- a {
+.btns a {
 	color: white;
 	text-decoration: none;
- 	}
 }
 
 .git-btn, .resume-btn{
 	background-color: var(--rasberry-red);
+}
 
-	i{
-		font-size: 16px;
-		padding-right: 10px;
-	}
+.git-btn i, .resume-btn i{
+	font-size: 16px;
+	padding-right: 10px;
 }
 
  .resume-btn{
@@ -568,10 +567,10 @@ input:checked + .slider:before{
 	border: 2px solid var(--medium-plum);
 	border-radius: 15px;
 	padding: 20px;
+}
 
-	p {
-		font-weight: bold;
-	}
+.skills-container p {
+	font-weight: bold;
 }
 
 .progress-circle{
@@ -584,13 +583,13 @@ input:checked + .slider:before{
     justify-content: center;
 	position: relative;
 	overflow: hidden;
+}
 
-	.percentage {
+.progress-circle .percentage {
     position: absolute;
     font-size: 16px;
     font-weight: bold;
 	color: var(--ivory-white);
-}
 }
 
 .progress-circle::before{
@@ -639,46 +638,45 @@ input:checked + .slider:before{
 	  animation-play-state: paused;
 }
 
-.column-two {
-	h3{
-		font-family: "Montserrat", serif;
-		font-size: 16px;
-		text-align: center;
-		text-wrap: nowrap;
-	}
+.column-two h3{
+	font-family: "Montserrat", serif;
+	font-size: 16px;
+	text-align: center;
+	text-wrap: nowrap;
+}
 
-	p{
-		padding: 20px 0;
-		line-height: 1.6;
-	}
+.column-two p{
+	padding: 20px 0;
+	line-height: 1.6;
+}
 
-	table{
-		width: 100%;
-		border-collapse: collapse;
-	}
-	table td{
-		padding: 16px;
-	}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
 
-	table td a{
+table td{
+	padding: 16px;
+}
+
+table td a{
 	color: var(--medium-plum);
-	}
+}
 
-	table th{
-		text-align: left;
-	}
+table th{
+	text-align: left;
+}
 
-	table tr{
-		border-bottom: 1px solid var(--rasberry-red);
-	}
+table tr{
+	border-bottom: 1px solid var(--rasberry-red);
+}
 
-	table tr:nth-child(odd){
-		background-color: var(--vt);
-	}
+table tr:nth-child(odd){
+	background-color: var(--vt);
+}
 
-	table tr:hover{
-		background-color: var(--light-navy);
-	}
+table tr:hover{
+	background-color: var(--light-navy);
 }
 
 /* RESUME SECTION */
@@ -764,7 +762,7 @@ ul .first-list{
 .project-container{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 13px;
 }
 
 /* The background for mobile view */
@@ -866,6 +864,7 @@ ul .first-list{
 	color: var(--ivory-white);
 	text-align: center;
 }
+
 .css-btn{
 	background-color: #264DE4;
 }
