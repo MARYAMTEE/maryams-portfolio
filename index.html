@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="portfolio">
+    <meta name="Author" content="Ayorinde Maryam Oluwatoyin">
+    <meta name="Keywords" content="Portfolio, Ayorinde Maryam Oluwatoyin, creative template, template design">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ayorinde Maryam Oluwatoyin</title>
+
+    <!-- Favicon Logo -->
+    <link rel="shortcut icon" href="media/myLogo.png" type="image/x-icon">
+
+    <!-- Css -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- JavaScript -->
+      <script src="main.js" defer></script>
+      <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<!-- Fontawesome Link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- The Nav Bar -->
+    <header>
+		<nav class="menu-icon">
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <button id="close-menu-btn" class="fas fa-times"></button>
+                
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home" arial-label="home"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume"><i class="fa-solid fa-file-alt"></i>Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToSection('project-mobile', 'project-desktop', event)"><i class="fa-solid fa-tasks"></i>Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                </ul>
+            </div>
+            <button id="open-menu-btn" class="fas fa-bars"></button>
+	  </nav>
+	</header>
+
+    <main>
+        <i id="open-btn" class="fa-solid fa-right-to-bracket"></i>
+        <section class="left-side section">
+		  <div id="side-details">
+			<!-- User Information-->
+			<div class="user-info">
+				<button id="close-btn" class="fas fa-times"></button>
+				<div id="user__image">
+			    	<img src="media/user-image.png" id="user-image" alt="Owner's Image"/> 
+				</div>
+				<div id="user-identity">
+				  <h1>AYORINDE MARYAM OLUWATOYIN</h1>
+				  <p>Front-end Developer</p>
+				</div>
+		    </div>
+
+			<!--	SKILLS	  -->
+			<div class="skills">
+				<ul>
+					<li>
+					<p>HTML</p>
+					<span class="progress-bar"><span class="html"></span>
+				</li>
+					<li>
+						<p>CSS</p>
+						<span class="progress-bar"><span class="css"></span>
+					</li>
+					<li>
+					  <p>JAVASCIPT</p>
+						<span class="progress-bar"><span class="javascript"></span>
+					</li>
+					<li>
+						<p>BOOTSTRAP</p>
+						<span class="progress-bar"><span class="bootstrap"></span>
+					</li>
+					<li>
+						<p>GIT AND GITHUB</p>
+						<span class="progress-bar"><span class="git"></span>
+					</li>
+				</ul>
+			</div>
+
+			<!--	TOGGLE SWITCH	-->
+			<div id="toggle-switch">
+			  <div id="toggle-description">
+				  <div id="toggle-sign">
+					  <i class="fa-solid fa-circle-half-stroke" arial-label="toggle-mode"></i>
+					  <div id="toggle-mode">
+				  	  	<p>Mode</p>
+				  	 </div>
+				  </div>
+				  
+			  </div>
+				  
+				<div id="toggle-btn">
+					<label name="switch" class="switch">
+						<input type="checkbox" id="switch">
+						<span class="slider"></span>
+					</label>
+				</div>
+			</div>
+
+			<!-- SOCIAL ICONS  -->
+			<div class="social-icons">
+				<ul class="social-list">
+					<li><a href="https://www.linkedin.com/in/ayorinde-maryam/" target="_blank"><i class="fa-brands fa-linkedin-in" arial-label="linkedin"></i></a></li>
+				  	<li><a href="https://github.com/MARYAMTEE" target="_blank"><i class="fa-brands fa-github" arial-label="github"></i></a></li>
+				  	<li><a href="https://x.com/mharyamt33"><i class="fa-brands fa-x-twitter" arial-label="twitter"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-facebook-f" arial-label="facebook"></i></a></li>
+				</ul>
+			</div>
+		  </div>
+        </section>
+
+  <!--Middle Section-->
+	  <section class="middle-section">
+			<section id="home">
+			    <div class="second-section">
+                    <div class="description-info">
+                        <div class="section2-details">
+                            <h1 class="heading-1-section2">Ayorinde Maryam Oluwatoyin</h1>
+                            <p class="para1-section2">I am a front-end web developer who loves creating clean and user-friendly websites. I enjoy bringing ideas to life with cool designs and smooth experiences.</p>
+                            <div class="btns">
+                                <button class="git-btn"><a href="https://github.com/MARYAMTEE" target="_blank"><i class="fab fa-github"></i>Github Profile</a></button>
+                                <button class="resume-btn"><a href="doc/maryam's-resume.pdf" target="_blank"><i class="far fa-file-alt"></i>View Resume</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2-image">
+                        <img src="media/user-img1.jpg" alt="Maryam's Image"/> 
+                    </div>                            
+			    </div>
+			</section>
+            
+            <!-- About Me -->
+			<section id="about-me">
+			  <div class="about-wrapper">
+				<div class="about-text">
+				  <h1 class="abt-txt">ABOUT ME</h1>
+				</div>
+				<div class="wrapper">
+				  <div class="column-one column">
+					<div class="skills-container">
+						<div class="progress-circle html-circle">
+							<span class="percentage">80%</span>
+						</div>
+						<p>HTML</p>
+					</div>
+					<div class="skills-container">
+						<div class="progress-circle css-circle">
+							<span class="percentage">85%</span>
+						</div>
+						<p>CSS</p>
+					</div>
+					<div class="skills-container">
+						<div class="progress-circle javascript-circle">
+							<span class="percentage">50%</span>
+						</div>
+						<p>JAVASCRIPT</p>
+					</div>
+					<div class="skills-container">
+						<div class="progress-circle bootstrap-circle">
+							<span class="percentage">70%</span>
+					  </div>
+						<p>BOOTSTRAP</p>
+					</div>
+				  </div>
+				  <div class="column-two column">
+					  <h3>Crafting Stunning & Functional Web Experiences</h3>
+					 <p>Turning ideas into beautiful, functional websites is my thing. As a front-end web developer, I blend creativity with code to craft seamless digital experiences. With an eye for design and a passion for problem solving, I enjoy making the web a more engaging and accessible space.<br><br>
+
+					Always learning, always building. Let's create something amazing together!</p>
+					<table>
+					  <tbody>
+						<tr>
+						  <th>Name:</th>
+						  <td>Ayorinde Maryam Oluwatoyin</td>
+						</tr>
+						<tr>
+						  <th>Language:</th>
+						  <td>English, Yoruba</td>
+						</tr>
+						<tr>
+						  <th>Email:</th>
+						  <td>ayorindemaryam078@gmail.com</td>
+						</tr>
+						<tr>
+						  <th>Location:</th>
+						  <td>Lagos, Nigeria</td>
+						</tr>
+						<tr>
+						  <th>Phone</th>
+						  <td>+234-802-790-6067</td>
+						</tr>
+					  </tbody>
+					</table>
+				  </div>
+				</div>
+			  </div>
+			</section>
+
+            <!-- Resume Section -->
+			<section id="resume">
+			  <div class="resume-container">
+				  <div class="about-text">
+					 <h1 class="abt-txt">RESUME</h1>
+				  </div>
+				<div class="resume-section">
+				  <div class="first-list-container flex column">
+					<div class="side-line"></div>
+					<div class="Education-details">
+					  <h1>Education</h1>
+					  <ul>
+						<li class="first-list"><h4>Lagos Baptist Senior Secondary School</h4></li>
+						<p>Secondary Education<span>(2015-2018)</span></p>
+					  </ul>
+					  <ul>
+						<li class="first-list"><h4>Lagos State Polytechnic, Ikorodu</h4></li>
+						<p>National Diploma in Office Technology and Management <span>(Distinction) (Dec 2021 – Dec 2023)</span></p>
+					  </ul>
+					</div>
+				  </div>
+				  <div class="middle-line"></div>
+				  <div class="second-list-container flex column">
+					<div class="side-line"></div>
+					<div class="certification-details">
+					  <h1>Certification</h1>
+					  <ul>
+						<li class="certs-list">Soft Skills Training -Jobberman</li>
+						<li class="certs-list">HTML &amp; CSS - Great Learning</li>
+						<li class="certs-list">Soft Skills &amp; Web Design - GFA Technology (LAG-UP)</li>
+						<li class="certs-list">Coding - Center for Integrated Health Program (CIHP)</li>
+						<li class="certs-list">HTML &amp; CSS - LearnKey</li>
+                        <li class="certs-list">Web Authorng Using Adobe Dreamweaver - Adobe</li>
+                        <li class="certs-list">Responsive Web Design - Freecodecamp</li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</section>
+
+			<!-- Mobile project slide -->
+	    	<section id="project-desktop" class="desktop-section">
+				<div class="about-text">
+						<h1 class="abt-txt">PROJECTS</h1>
+				</div>
+				<div class="project-container">
+					<div class="project">
+						<div class="overlay">
+							<div class="text"><a href="https://maryamtee.github.io/Product-card/" target="_blank">Click to view</a></div>
+						</div>
+						<div class="project-description">
+							<figcaption>Article Preview Component</figcaption>
+							<button class="html-btn">HTML</button>
+							<button class="html-btn css-btn">CSS</button>
+						</div>
+					</div>
+
+					<div class="project">
+						<div class="overlay">
+							<div class="text">
+								<a href="https://maryamtee.github.io/blog-preview-card/" target="_blank">Click to view</a></div>
+						</div>
+						<div class="project-description">
+							<figcaption>Blog preview card</figcaption>
+							<button class="html-btn">HTML</button>
+							<button class="html-btn css-btn">CSS</button>
+						</div>
+					</div>
+
+					<div class="project">
+						<div class="overlay">
+							<div class="text">
+								<a href="https://maryamtee.github.io/social-proof.github.io/" target="_blank">Click to view</a>
+							</div>
+							</div>
+						<div class="project-description">
+							<figcaption>Social proof</figcaption>
+							<button class="html-btn">HTML</button>
+							<button class="html-btn css-btn">CSS</button>
+						</div>
+					</div>
+					<div class="project">
+					<div class="overlay">
+						<div class="text">
+							<a href="https://maryamtee.github.io/card-feature/" target="_blank">Click to view</a></div>
+					</div>
+					<div class="project-description">
+						<figcaption>A Four Card Feature</figcaption>
+						<button class="html-btn">HTML</button>
+						<button class="html-btn css-btn">CSS</button>
+					</div>
+					</div>
+
+					<div class="project">
+					<div class="overlay">
+						<div class="text">
+							<a href="https://maryamtee.github.io/fylo-page/" target="_blank">Click to view</a></div>
+					</div>
+					<div class="project-description">
+						<figcaption>Fylo page</figcaption>
+						<button class="html-btn">HTML</button>
+						<button class="html-btn css-btn">CSS</button>
+					</div>
+					</div>
+
+					<div class="project">
+					<div class="overlay">
+						<div class="text">
+							<a href="https://maryamtee.github.io/construction-site/" target="_blank">Click to view</a></div>
+					</div>
+					<div class="project-description">
+						<figcaption>Bold-build construction website</figcaption>
+						<button class="html-btn">HTML</button>
+						<button class="html-btn css-btn">CSS</button>
+					</div>
+					</div>
+				</div>
+			</section>
+        </section>
+    </main>
+</body>
+</html>
