@@ -61,8 +61,9 @@ button:hover{
     background-color: var(--deep-plum);
     position: fixed;
     top: 0;
+	right: 0;
     right: -250px;
-    height: 100%; 
+    height: 100vh; 
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -70,6 +71,7 @@ button:hover{
     padding-top: 100px; 
     transition: 0.5s ease-in-out;
 	z-index: 1000;
+	overflow: hidden;
 }
 
 .nav-list{
@@ -175,7 +177,7 @@ body.show-menu main::before{
 }
 	
 .user-info #close-btn{
-	right: 5px;
+	right: 0;
 	top: 15px;
 	color: var(--ivory-white);
 }
@@ -447,7 +449,7 @@ input:checked + .slider:before{
 
 /* Middle Section */
 .middle-section{
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
 .middle-section section{
@@ -469,7 +471,6 @@ input:checked + .slider:before{
 	width: 22.5rem;
 	padding: 20px 10px;
 	color: var(--ivory-white);
-	box-sizing: border-box;
 }
 
 .description-info{
@@ -545,7 +546,7 @@ input:checked + .slider:before{
 	font-size: 40px;
 	font-weight: bold !important;
 	letter-spacing: 3px;
-	background-image: linear-gradient(var(--deep-plum));
+	background-image: linear-gradient(var(--deep-plum), var(--deep-plum));
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -740,7 +741,7 @@ ul .first-list{
 
 .second-list-container{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex -start;
 	flex-direction: row;
 	padding-top: 30px;
 }
@@ -757,12 +758,14 @@ ul .first-list{
 	object-fit: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
+	margin-bottom: 15px;
 }
 
 .project-container{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 13px;
+	/* gap: 13px; */
+	justify-content: space-between;
 }
 
 /* The background for mobile view */
