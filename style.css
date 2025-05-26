@@ -449,7 +449,8 @@ input:checked + .slider:before{
 
 /* Middle Section */
 .middle-section{
-	padding: 0 20px;
+	padding: 0 10px;
+	margin: 0;
 }
 
 .middle-section section{
@@ -465,21 +466,24 @@ input:checked + .slider:before{
 }
 
 .second-section{
+	width: 100%;
+	max-width: 350px;
 	overflow: hidden;
 	background-color: var(--medium-plum);
 	box-shadow:  0 1rem 3rem rgba(0, 0, 0, 0.175);
-	width: 22.5rem;
+	width: 22.7rem;
 	padding: 20px 10px;
 	color: var(--ivory-white);
+	margin: 0 auto;
 }
 
 .description-info{
 	text-align: center;
 }
 .description-info h1{
-	color: var(--ivory-white)
+	color: var(--ivory-white);
+	font-size: 18px;
 }
-
 
 .heading-1-section2{
 	text-transform: uppercase;
@@ -488,6 +492,11 @@ input:checked + .slider:before{
     border-right: 2px solid #2c3e50;
     width: 0;
     animation: typing 3s steps(27, end) forwards;
+}
+
+#home{
+	display: flex;
+	justify-content: center;
 }
 
 @keyframes typing {
