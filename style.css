@@ -758,13 +758,11 @@ ul .first-list{
 /* Project Section For  Mobile Devices */
 .project{
 	flex: 0 0 48%;
-	box-sizing: border-box;
 	text-align: center;
 	border: 2px solid var(--medium-plum);
-	height: 450px;
+	height: 430px;
 	position: relative;
 	text-align: center;
-	object-fit: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-bottom: 15px;
@@ -864,17 +862,28 @@ ul .first-list{
 }
 
 /* project button */
-.project-description button{
-	margin: 15px 0;
+.project-description div{
+	margin: 10px 0;
 }
 
 .html-btn{
 	border: none;
 	outline: none;
 	background-color: #E34C26;
-	padding: 5px 20px;
+	width: 70px;
+	height: 30px;
 	color: var(--ivory-white);
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.lang-btns{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
 }
 
 .css-btn{
