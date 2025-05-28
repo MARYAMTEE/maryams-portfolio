@@ -82,7 +82,7 @@ button:hover{
 }
 
 .nav-link {
-	color: white;
+	color: var(--ivory-white);
 	text-decoration: none;
 	text-transform: uppercase;
 	display: flex;
@@ -91,7 +91,7 @@ button:hover{
 	font-weight: bold;
 	width: 250px;
 	height: 50px;
-	font-size: 14px;
+	font-size: 16px;
 	display: flex;
     align-items: center;
 	justify-content: center;
@@ -455,7 +455,7 @@ input:checked + .slider:before{
 }
 
 .middle-section section{
-	padding: 70px 0;
+	padding: 30px 0;
 }
 
 .section2-image{
@@ -498,6 +498,10 @@ input:checked + .slider:before{
 #home{
 	display: flex;
 	justify-content: center;
+	padding-top: 70px;
+}
+
+#home > .second-section{
 }
 
 @keyframes typing {
@@ -553,20 +557,16 @@ input:checked + .slider:before{
 /* About Me Section*/
 .abt-txt{
 	font-family: "Montserrat", serif;
-	font-size: 40px;
-	font-weight: bold !important;
 	letter-spacing: 3px;
-	background-image: linear-gradient(var(--deep-plum), var(--deep-plum));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	word-wrap: break-word;
+	word-wrap: nowrap;
 	text-align: center;
-	font-size: 25px;
+	font-size: clamp(2rem, 8vw, 6rem);
+  	font-weight: 800;
+  	letter-spacing: 3px;
 }
 
 .about-text{
-	padding-bottom: 15px;
+	padding-bottom: 25px;
 }
 
 .skills-container{
@@ -584,6 +584,7 @@ input:checked + .slider:before{
 	font-weight: bold;
 }
 
+/* Circle Loader */
 .progress-circle{
 	width: 100px;
 	height: 100px;
@@ -611,6 +612,27 @@ input:checked + .slider:before{
 	border-radius: 50%;
 	background-color: var(--medium-plum);
 	list-style-type:  none; 
+}
+
+/* Progress Circle animation*/
+.html-circle{
+	background: conic-gradient(var(--deep-plum) calc(80 * 3.6deg), var(--vt) calc(80 * 3.6deg));
+	animation: html-circle 0s;
+}
+
+.css-circle{
+	background: conic-gradient(var(--rasberry-red) calc(85 * 3.6deg), var(--vt) calc(85 * 3.6deg));
+	animation: css-circle 0s;
+}
+
+.javascript-circle{
+	background: conic-gradient(var(--rasberry-red) calc(50 * 3.6deg), var(--vt) calc(50 * 3.6deg));
+	animation: javascript-circle 0s;
+}
+
+.bootstrap-circle{
+	background: conic-gradient(var(--rasberry-red) calc(70 * 3.6deg), var(--vt) calc(70 * 3.6deg));
+	animation: bootstrap-circle 0s;
 }
 
 .wrapper{
@@ -651,7 +673,7 @@ input:checked + .slider:before{
 
 .column-two h3{
 	font-family: "Montserrat", serif;
-	font-size: 16px;
+	font-size: 13px;
 	text-align: center;
 	text-wrap: nowrap;
 }
@@ -659,6 +681,7 @@ input:checked + .slider:before{
 .column-two p{
 	padding: 20px 0;
 	line-height: 1.6;
+	text-align: justify;
 }
 
 table{
@@ -1028,9 +1051,9 @@ ul .first-list{
 }
 
 .contact-form form h2{
-	text-transform: uppercase;
-	font-size: 20px;
-	color: var(--deep-plum);
+	font-size: clamp(1rem, 8vw, 6rem);
+	font-weight: 800;
+	letter-spacing: -1px;
 	text-align: center;
 }
 
@@ -1080,4 +1103,18 @@ ul .first-list{
 	padding: 10px;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+footer{
+	background-color: var(--medium-plum);
+	color: var(--ivory-white);
+	padding: 15px 0;
+	width: 100%;
+	margin: 0;
+}
+
+footer p{
+	text-align: right;
+	padding: 0 10px;
+	font-size: 14px;
 }
